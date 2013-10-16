@@ -16,3 +16,9 @@
 *.exe
 *.out
 *.app
+
+.metadata
+Debug/*
+868MHz - Limited CCS Core Edition/*
+868MHz - Unrestricted CCS Platinum/*
+

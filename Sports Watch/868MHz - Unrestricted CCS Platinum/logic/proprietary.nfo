@@ -1,0 +1,127 @@
+MSP430 C/C++ Optimizer                  v4.1.4
+Build Number 1NAVN-KDADEMDK-RTARQ-WAR-ZACIF_U_R_U
+
+		======File-level Analysis Summary======
+
+
+extern void InitRadio() is called from 3 sites in this file.
+    It appears to be inlineable (size = 47 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteBurstPATable() (1 times)
+	WriteSingleReg() (13 times)
+	WriteRfSettings() (1 times)
+
+extern void WriteBurstPATable() is called from 1 sites in this file.
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	_disable_interrupts() (1 times)
+
+extern void WriteRfSettings() is called from 1 sites in this file.
+    It appears to be inlineable (size = 105 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteSingleReg() (34 times)
+
+extern void cSL_transmit_code() is called from 1 sites in this file.
+    It appears to be inlineable (size = 78 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+	Timer0_A4_Delay() (1 times)
+	WriteBurstReg() (1 times)
+	Strobe() (5 times)
+
+extern void init_proprietary() is called from 0 sites in this file.
+    It appears to be inlineable (size = 36 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Strobe() (1 times)
+	display_symbol() (6 times)
+	InitRadio() (2 times)
+	ResetRadioCore() (2 times)
+
+extern void transmit_proprietary() is called from 0 sites in this file.
+    It appears to be inlineable (size = 45 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Strobe() (2 times)
+	cSL_transmit_code() (1 times)
+	display_symbol() (3 times)
+	InitRadio() (1 times)
+	ResetRadioCore() (1 times)
+
+
+These functions may be recursive:
+	init_proprietary()
+	transmit_proprietary()
+	cSL_transmit_code()
+	InitRadio()
+	WriteBurstPATable()
+	WriteRfSettings()
+
+These external functions are called but not defined here:
+	ResetRadioCore()
+	display_symbol()
+	Strobe()
+	WriteBurstReg()
+	Timer0_A4_Delay()
+	display_chars()
+	_disable_interrupts()
+	WriteSingleReg()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void WriteRfSettings() is called from 1 sites in this file.
+    It appears to be inlineable (size = 105 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void WriteBurstPATable() is called from 1 sites in this file.
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void InitRadio() is called from 3 sites in this file.
+    It appears to be inlineable (size = 47 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteRfSettings() (1 times)
+	WriteBurstPATable() (1 times)
+
+==============================================================================
+
+extern void cSL_transmit_code() is called from 1 sites in this file.
+    It appears to be inlineable (size = 78 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void transmit_proprietary() is called from 0 sites in this file.
+    It appears to be inlineable (size = 45 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	InitRadio() (1 times)
+	cSL_transmit_code() (1 times)
+
+==============================================================================
+
+extern void init_proprietary() is called from 0 sites in this file.
+    It appears to be inlineable (size = 36 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	InitRadio() (2 times)
+<<NULL MIX DOMAIN>>
+
+== END OF INFO OUTPUT==

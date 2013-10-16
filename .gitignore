@@ -17,6 +17,11 @@
 *.out
 *.app
 
+*.nfo
+*.obj
+*.pp
+*.mk
+
 .metadata
 Debug/*
 868MHz - Limited CCS Core Edition/*

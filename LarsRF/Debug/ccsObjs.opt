@@ -1,0 +1,1 @@
+"./ti/TI_CC_spi_original.obj" "./ti/TI_CC_spi.obj" "./ti/CC1100-CC2500.obj" "./main_acktest.obj" -l"libc.a" "../lnk_msp430g2533.cmd" 
